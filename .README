@@ -1,0 +1,63 @@
+CSE6242 - Team #104
+
+
+Structural Topic Models on the Russian IRA Twitter Dataset
+
+____________________________________________________________
+
+Links to Tableau dashboards to explore out analysis:
+
+How Topic Content Changed Over Time:
+https://public.tableau.com/profile/schai5500#!/vizhome/word_importance_temporal_analysis_updated_v2/WordImportance-Dashboard?publish=yes
+
+High-level EDA:
+https://public.tableau.com/profile/shaobo7549#!/vizhome/EDA_15557961312920/EDA?publish=yes
+
+Identified Topics and Top Associated Words:
+https://public.tableau.com/profile/johnnychen#!/vizhome/troll_topicsv2/Dashboard1?publish=yes
+
+______________________________________________________________
+
+Running the main.R script in will train a structural topic model on the
+Russian IRA Twitter Dataset provided by FiveThirtyEight. The program uses
+a t-SNE dimensionality reduction to locate anchor words that determine the
+number of topics in the model.
+
+Before running any script, you must collect the data. Because the dataset is quite
+large, we did not include it in the submission file. Download the data from the following link:
+
+https://github.com/fivethirtyeight/russian-troll-tweets
+
+Once downloaded, place all those .csv files in /CODE/data then run the read-data.R script.
+
+
+
+To run the models, run the main.R using R version 3.5+
+
+
+
+Note: Requires R version 3.5+
+Note: This package has the following dependencies:
+		- tidyverse
+		- stm
+		- quanteda
+		- here
+		- lubridate
+		- tidytext
+		- tictoc
+	To download these dependencies, run dependencies.R in an R console
+Note: It is recommended you use the given R project file to avoid file-path issues.
+
+
+This project contains 6 scripts:
+	1. dependencies.R        -- installs dependencies
+	2. read-data.R           -- reads csv files from /DOCS/data
+	3. helper.R              -- loads data and pre-processes for modeling
+	4. stm.R                 -- run Structural Topic Model using t-SNE embedded anchor-words
+	5. final_model_extract.R -- extract data for Tableau app and write files
+	6. main.R		 -- main method; runs helper.R stm.R and final_model_extract.R in sequence
+
+The project also contains a .rds file which holds the full dataset.
+
+
+
