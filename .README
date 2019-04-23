@@ -1,20 +1,6 @@
 
 Structural Topic Models on the Russian IRA Twitter Dataset
 
-____________________________________________________________
-
-Links to Tableau dashboards to explore out analysis:
-
-How Topic Content Changed Over Time:
-https://public.tableau.com/profile/schai5500#!/vizhome/word_importance_temporal_analysis_updated_v2/WordImportance-Dashboard?publish=yes
-
-High-level EDA:
-https://public.tableau.com/profile/shaobo7549#!/vizhome/EDA_15557961312920/EDA?publish=yes
-
-Identified Topics and Top Associated Words:
-https://public.tableau.com/profile/johnnychen#!/vizhome/troll_topicsv2/Dashboard1?publish=yes
-
-______________________________________________________________
 
 Running the main.R script in will train a structural topic model on the
 Russian IRA Twitter Dataset provided by FiveThirtyEight. The program uses
